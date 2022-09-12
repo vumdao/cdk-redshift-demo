@@ -101,6 +101,10 @@
 
   <img src=images/scm.png width=1100>
 
+- Overview of all components
+
+  <img src=images/diagram.png width=1100>
+
 ## 🚀 Working with Redshift Cluster <a name="Working-with-Redshift-Cluster"></a>
 - We use sample data in [data_sample/amzn_reviews_en.json](https://github.com/vumdao/cdk-redshift-demo/blob/master/data_sample/amzn_reviews_en.json), you can find more in [Amazon review data (2018)](http://deepyeti.ucsd.edu/jianmo/amazon/index.html)
 
