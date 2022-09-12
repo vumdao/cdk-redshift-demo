@@ -1,22 +1,35 @@
 <p align="center">
   <a href="https://dev.to/vumdao">
-    <img alt="CDK Redshfit Demo" src="images/cover.png" width="700" />
+    <img alt="AWS CDK Redshfit Demo" src="images/cover.png" width="700" />
   </a>
 </p>
 <h1 align="center">
-  <div><b> CDK Redshfit Demo</b></div>
+  <div><b>AWS CDK Redshfit Demo</b></div>
 </h1>
 
 ## Abstract
 - For getting started with AWS Redshift, this post guides you to provide Redshift cluster and all necessary other resources such as VPC, redshift IAM role, S3 bucket where we load data to Amazon Redshift and a small EC2 instance as postgresql client using AWS CDK typescript.
 
 ## Table Of Contents
+ * [AWS Redshift overview](#AWS-Redshift-overview)
  * [Redshift cluster stacks](#Redshift-cluster-stacks)
  * [Deploy stacks](#Deploy-stacks)
  * [Working with Redshift Cluster](#Working-with-Redshift-Cluster)
  * [Conclusion](#Conclusion)
 
 ---
+
+## 🚀 **AWS Redshift overview** <a name="AWS-Redshift-overview"></a>
+- AWS Redshift is a cloud-based petabyte-scale data warehouse service offered as one of Amazon’s ecosystem of data solutions.
+- Based on PostgreSQL, the platform integrates with most third-party applications by applying its ODBC and JDBC drivers.
+- Amazon Redshift delivers fast query performance by using columnar storage technology to improve I/O efficiency and parallelizing queries across multiple nodes
+- Redshit cluster overview
+
+  <img src=images/redshift.png width=1100>
+
+- Node slices in compute nodes
+
+  <img src=images/node-slices.png width=1100>
 
 ## 🚀 **Redshift cluster stacks** <a name="Redshift-cluster-stacks"></a>
 - The Redshift cluster is in VPC and under private subnet and security group, so we first create the VPC stack, and for saving cost, max `availabilityZones` is set to 1
