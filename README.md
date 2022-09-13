@@ -101,7 +101,7 @@
   ```
 
 ## 🚀 Deploy stacks <a name="Deploy-stacks"></a>
-- Infrastructure of code for this project is ready we now deploy the stacks
+- Infrastructure of code for this project is ready we now deploy the stacks. It's up to you to use `concurrency` option for fasten deployment and `require-approval` to bypass confirmation of creating/updating/removing sensitive things.
   ```
   cdk deploy --concurrency 2 --require-approval never
   ```
