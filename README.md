@@ -197,7 +197,7 @@
   ```
   prodreview=# copy product_reviews_json
   prodreview-# FROM 's3://sin-d1-redshift-data-ingest/amzn_reviews_en.json'
-  prodreview-# IAM_ROLE 'arn:aws:iam::107858015234:role/sin-d1-redshift-role'
+  prodreview-# IAM_ROLE 'arn:aws:iam::123456789012:role/sin-d1-redshift-role'
   prodreview-# json 'auto ignorecase';
   INFO:  Load into table 'product_reviews_json' completed, 5000 record(s) loaded successfully.
   COPY
@@ -215,7 +215,7 @@
   ```
   prodreview=# copy product_reviews_parquet
   FROM 's3://sin-d1-redshift-data-ingest/amzn_reviews_en.parquet'
-  IAM_ROLE 'arn:aws:iam::107858015234:role/sin-d1-redshift-role'
+  IAM_ROLE 'arn:aws:iam::123456789012:role/sin-d1-redshift-role'
   format as parquet;
   INFO:  Load into table 'product_reviews_parquet' completed, 5000 record(s) loaded successfully.
   COPY
